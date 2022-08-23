@@ -1,0 +1,24 @@
+cabal-version:      3.4
+name:               app
+version:            0.1.0.0
+
+extra-source-files: CHANGELOG.md
+
+executable Euler
+
+    ghc-options:         -threaded
+                         -Wall
+                         -fwarn-incomplete-patterns
+                         -fwarn-incomplete-uni-patterns
+
+    main-is:             Main.hs
+
+    build-depends:       base==4.14.3.0
+
+    hs-source-dirs:      src
+
+    other-modules:       Problem1
+                       
+    other-extensions:    OverloadedStrings
+
+    default-language:    Haskell2010
