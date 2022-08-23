@@ -14,8 +14,8 @@ md5sum :: String
 md5sum = "4194eb91842c8e7e6df099ca73c38f28"
 
 answer :: Int
-answer = fibonacci [2,1]
+answer = go [2,1]
     where
-      fibonacci (x:y:xs)
+      go (x:y:xs)
           | x > 4000000 = sum $ filter (even) (y:xs)
-          | otherwise = fibonacci ((x+y):x:y:xs)
+          | otherwise   = go ((x+y):x:y:xs)
