@@ -15,8 +15,7 @@ md5sum = "4194eb91842c8e7e6df099ca73c38f28"
 
 answer :: Int
 answer = fibonacci [2,1]
-
-fibonacci :: [Int] -> Int
-fibonacci (x:y:xs)
-    | x > 4000000 = sum $ filter (even) (y:xs)
-    | otherwise = fibonacci ((x+y):x:y:xs)
+    where
+      fibonacci (x:y:xs)
+          | x > 4000000 = sum $ filter (even) (y:xs)
+          | otherwise = fibonacci ((x+y):x:y:xs)
