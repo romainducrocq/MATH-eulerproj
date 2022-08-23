@@ -14,4 +14,7 @@ md5sum :: String
 md5sum = "d4cfc27d16ea72a96b83d9bdef6ce2ec"
 
 answer :: Int
-answer = foldr max 0 [(x * y) | x <- [100..999], y <- [100..999], (show (x * y)) == (reverse $ show (x * y))]
+answer = foldr max 0 [x * y |
+                          x <- [100..999],
+                          y <- [100..999],
+                          (\s -> s == reverse s) . show $ (x * y)]

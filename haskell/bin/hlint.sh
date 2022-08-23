@@ -1,3 +1,3 @@
 #!/bin/bash
 
-hlint ../src/Problem${1}.hs
+hlint ../src/P/E${1}.hs

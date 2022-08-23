@@ -17,5 +17,5 @@ answer :: Int
 answer = f [2,1]
     where
       f (x:y:xs)
-          | x > 4000000 = sum $ filter (even) (y:xs)
+          | x > 4000000 = sum $ filter even (y:xs)
           | otherwise   = f ((x+y):x:y:xs)
