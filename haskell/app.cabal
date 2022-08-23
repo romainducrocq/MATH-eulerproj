@@ -14,10 +14,14 @@ executable Euler
     main-is:             Main.hs
 
     build-depends:       base==4.14.3.0
+                       , cryptonite==0.30
+                       , utf8-string==1.0.2
 
     hs-source-dirs:      src
 
-    other-modules:       Problem1
+    other-modules:       Test
+                       , P.E1
+                       , P.E2
                        
     other-extensions:    OverloadedStrings
 

@@ -1,6 +1,11 @@
 module Main where
 
--- import Problem1
+import Test
+
+-- import P.E1
+import P.E2
 
 main :: IO ()
-main = return ()
+main = do
+  print answer
+  print $ test md5sum answer
