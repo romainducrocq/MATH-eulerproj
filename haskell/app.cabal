@@ -20,10 +20,7 @@ executable Euler
     hs-source-dirs:      src
 
     other-modules:       Test
-                       , P.E1
-                       , P.E2
-                       , P.E3
-                       , P.E4
+                       , P.E1, P.E2, P.E3, P.E4, P.E5
                        
     other-extensions:    OverloadedStrings
 
