@@ -12,9 +12,9 @@ md5sum :: String
 md5sum = "94c4dd41f9dddce696557d3717d98d82"
 
 answer :: Int
-answer = go 2 600851475143
+answer = f 2 600851475143
     where
-      go i r
+      f i r
           | i == r       = r
-          | mod r i == 0 = go 2 (div r i)
-          | otherwise    = go (i + 1) r
+          | mod r i == 0 = f 2 (div r i)
+          | otherwise    = f (i + 1) r
