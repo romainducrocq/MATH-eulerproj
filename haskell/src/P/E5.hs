@@ -12,7 +12,4 @@ md5sum :: String
 md5sum = "bc0d0a22a7a46212135ed0ba77d22f3a"
 
 answer :: Int
-answer = f (11 * 13 * 17 * 19)
-    where f x
-            | all (\d -> (mod x d) == 0) [11..20] = x
-            | otherwise = f (x + 19)
+answer = foldr lcm 1 [1..20]
