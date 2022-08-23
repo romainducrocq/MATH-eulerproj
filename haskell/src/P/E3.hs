@@ -16,5 +16,5 @@ answer = f 2 600851475143
     where
       f i r
           | i == r       = r
-          | mod r i == 0 = f 2 (div r i)
+          | mod r i == 0 = f i (div r i)
           | otherwise    = f (i + 1) r
