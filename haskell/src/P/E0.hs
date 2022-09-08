@@ -8,3 +8,5 @@ md5sum = ""
 
 answer :: Int
 answer = 0
+
+-- https://github.com/nayuki/Project-Euler-solutions/blob/master/haskell

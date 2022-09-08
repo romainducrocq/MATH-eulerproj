@@ -21,6 +21,7 @@ executable Euler
 
     other-modules:       Test
                        , P.E1, P.E2, P.E3, P.E4, P.E5
+                       , P.E6, P.E7, P.E8, P.E8
                        
     other-extensions:    OverloadedStrings
 
